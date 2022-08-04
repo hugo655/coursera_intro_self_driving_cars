@@ -57,3 +57,31 @@ Some of the non-trivial challenges to perception are misreads from the sensors. 
 * Reflection;
 * Lens-flair (illumination directly into the sensor);
 * Visibility for weather conditions;
+
+## Notes on Lesson #3
+Imagine the scenario where a driver stops at an interception. Several decisions may be taken 
+depending on how the intersection is configured. Example:
+* Is there a pedestrian-crossing? if so, the car has to stop behind it. If there isn't? where
+should the car be stopped?
+* Are there any cars behind?
+* Are there any cars in the intersection when the red light turns green?
+
+Driving requires a lot of immediate decisions!
+
+One approach to model this would be by using **Rule Based Planning**. In which a series of rules
+dictates the next behaviour: 
+* Example: If there is a stop sign. Stop
+
+An alternative approach would be **Predictive Planning**, which predictions are made based on
+how objects are moving on the field of the car. 
+* Example: A car has stopped for 10 seconds, hence is is likely that is going to remain stop for a couple 
+of more seconds.
+
+This second type of planning is more aligned to how humans think, and thus how most self-driving 
+vehicles work in the present.
+
+[This Paper](https://ieeexplore.ieee.org/abstract/document/7490340) is a good survey
+on motion planning for self-driving vehicles.
+
+[This other paper](https://onlinelibrary.wiley.com/doi/epdf/10.1002/rob.20255) diccusses some
+of the challenges of motion planning in urban area. It used 'mixed planning systems'.
